@@ -1,0 +1,12 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+{{ blog.title }}
+<br>
+{{ blog.description }}
+<br>
+{{ blog.date }}
+
+<a href="{% url 'blog:all_blogs' %}" class="btn btn-warning">Blog Home</a>
+
+{% endblock %}
